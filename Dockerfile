@@ -1,4 +1,4 @@
-FROM centos:7
+FROM bluescape/base-centos7
 
 ENV PID_DIR /tmp/pidDir
 
@@ -15,4 +15,8 @@ COPY rsyslog.conf /etc/rsyslog.conf
 EXPOSE 1514
 
 CMD ["sh", "-c", "/usr/sbin/rsyslogd -i ${PID_DIR}/pid -n"]
+
+LABEL \
+  org.label-schema.name="rsyslof" \
+  org.label-schema.description="Bluescape rsyslog endpoint"
 
