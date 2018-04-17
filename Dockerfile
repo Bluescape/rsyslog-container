@@ -17,6 +17,6 @@ EXPOSE 1514
 CMD ["sh", "-c", "/usr/sbin/rsyslogd -i ${PID_DIR}/pid -n"]
 
 LABEL \
-  org.label-schema.name="rsyslof" \
-  org.label-schema.description="Bluescape rsyslog endpoint"
+  org.label-schema.name="rsyslog" \
+  org.label-schema.description="Bluescape rsyslog"
 
