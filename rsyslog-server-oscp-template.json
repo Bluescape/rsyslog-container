@@ -46,7 +46,7 @@
                         "containers": [
                             {
                                 "name": "rsyslog",
-                                "image": "docker.io/philipgough/rsyslog",
+                                "image": "dummy",
                                 "ports": [
                                     {
                                         "name": "rsyslog-udp",
